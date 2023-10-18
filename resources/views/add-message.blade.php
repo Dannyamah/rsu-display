@@ -9,7 +9,7 @@
                 <div class="col-xl-12 col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Add Messages To Display</h4>
+                            <h4 class="card-title">Add Scrolling Messages To Display</h4>
                         </div>
                         <div class="card-body">
                             <div class="basic-form">

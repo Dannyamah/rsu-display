@@ -30,14 +30,14 @@ Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
-    Route::get('/add-message', [HomeController::class, 'index'])->name('message.add');
-    Route::post('/submit-message', [HomeController::class, 'submit'])->name('message.submit');
+    Route::get('/add-message', [HomeController::class, 'add_scrolling_message'])->name('message.add');
+    Route::post('/submit-message', [HomeController::class, 'submit_scrolling_message'])->name('message.submit');
 
-    Route::get('/add-static-message', [HomeController::class, 'static'])->name('static.add');
-    Route::post('/submit-static-message', [HomeController::class, 'static_submit'])->name('static.submit');
+    Route::get('/add-static-message', [HomeController::class, 'add_static_message'])->name('static.add');
+    Route::post('/submit-static-message', [HomeController::class, 'submit_static_message'])->name('static.submit');
 
-    Route::get('/edit-message/{display}', [HomeController::class, 'edit'])->name('message.edit');
-    Route::post('/update-message/{display}', [HomeController::class, 'update'])->name('message.update');
+    Route::get('/edit-message/{display}', [HomeController::class, 'edit_scrolling_message'])->name('message.edit');
+    Route::post('/update-message/{display}', [HomeController::class, 'update_scrolling_message'])->name('message.update');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

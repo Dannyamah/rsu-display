@@ -156,7 +156,7 @@
                 </div>
                 <div class="displayed">
                     <marquee behavior="scroll" direction="left" >
-                        {{ $display }}</marquee>
+                        {{ $scrolling_message }}</marquee>
                 </div>
                
             </div>

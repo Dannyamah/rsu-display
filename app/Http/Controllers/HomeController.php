@@ -17,20 +17,20 @@ class HomeController extends Controller
 
     function welcome(){
 
-        $display = Display::latest()->value('message');
+        $scrolling_message = Display::latest()->value('message');
         $static_message = Display::latest()->value('static_message');
 
-        return view('welcome', compact('display', 'static_message'));
+        return view('welcome', compact('scrolling_message', 'static_message'));
 
     }
 
-    function index(){
+    function add_scrolling_message(){
 
         return view('add-message');
     
     }
 
-    function submit(Request $request, Display $display){
+    function submit_scrolling_message(Request $request, Display $display){
         
         $latest_static_message = Display::latest()->value('static_message');
 
@@ -47,13 +47,13 @@ class HomeController extends Controller
 
     }
 
-    function static(){
+    function add_static_message(){
 
         return view('add-static-message');
     
     }
 
-    function static_submit(Request $request, Display $display){
+    function submit_static_message(Request $request, Display $display){
         
         $latest_message = Display::latest()->value('message');
 
@@ -70,12 +70,12 @@ class HomeController extends Controller
 
     }
 
-    public function edit(Display $display)
+    public function edit_scrolling_message(Display $display)
     {
        return view('edit-message', compact('display'));
     }
 
-    public function update(Request $request, Display $display)
+    public function update_scrolling_message(Request $request, Display $display)
     {
         $request->validate([
             'message' => 'required',
