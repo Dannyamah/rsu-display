@@ -39,6 +39,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/edit-message/{display}', [HomeController::class, 'edit_scrolling_message'])->name('message.edit');
     Route::post('/update-message/{display}', [HomeController::class, 'update_scrolling_message'])->name('message.update');
 
+    Route::delete('/delete-message/{id}', [HomeController::class, 'message_destroy'])->name('message.destroy');
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

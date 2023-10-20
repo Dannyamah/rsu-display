@@ -144,18 +144,18 @@
 
         <!-- HERO SECTION BEGINS -->
         <section class="hero" id="home" data-aos="fade-up" data-aos-offset="-150"
-        data-aos-delay="0"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center">
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
             <div class="display">
                 <div class="static">
-                    <h4>{{ $static_message }}</h4>
+                    <h4 style="text-transform: uppercase">{{ $static_message }}</h4>
                 </div>
                 <div class="displayed">
-                    <marquee behavior="scroll" direction="left" >
+                    <marquee style="text-transform: uppercase" behavior="scroll" direction="left" >
                         {{ $scrolling_message }}</marquee>
                 </div>
                
@@ -165,12 +165,12 @@
     
         <!-- OUR WORK SECTION BEGINS -->
         <section class="our_work" id="our_work" data-aos="fade-up" data-aos-offset="-150"
-        data-aos-delay="0"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center">
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center">
             <div class="work">
                 <h2>Our Work</h2>
             </div>
@@ -234,7 +234,7 @@
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
-                <div class="pic">
+                <div class="pic" id="left-pic">
                     <img src="/asset/images/drnick.jpg" alt="">
                 </div>
                 <div class="bio">
@@ -288,7 +288,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="pic">
+                <div class="pic" id="right-pic">
                     <img src="/asset/images/sodiq.jpg" alt="">
                 </div>
             </div>
@@ -299,7 +299,7 @@
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
-                <div class="pic">
+                <div class="pic" id="left-pic">
                     <img src="/asset/images/amah.jpg" alt="">
                 </div>
                 <div class="bio">
@@ -328,13 +328,13 @@
                 </div>
             </div>
             <div class="contain" data-aos="fade-up" data-aos-offset="-150"
-            data-aos-delay="0"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center">
-    
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center">
+            
                 <div class="bio">
                     <p>
                         Eze Wisdom Moses is a BSc. Degree Holder, who studied at the
@@ -353,10 +353,8 @@
                         solar panels and inverters (hybrid inverters),
                         installation of electrical gadgets in various buildings.
                         Design and construction of Seven Segments
-                        Digital Clock using Light Emitting Diodes (LEDs), Atmega32p
-                        and Real Time Clock (RTC).
-                        Design and construction of an Automated Digital
-                        Display using Light Emitting Diodes (LEDs) controlled by a website.
+                        Digital Clock.
+                        Design and Implementation of a remote web-based digital display system.
                         Email:<span style="color: #012945;"><b>ezewisdommoses@gmail.com</b></span>
                     </p>
                     <div class="but">
@@ -365,7 +363,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="pic">
+                <div class="pic" id="right-pic">
                     <img src="/asset/images/wisdom.jpg" alt="">
                 </div>
             </div>
@@ -376,7 +374,7 @@
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
-                <div class="pic">
+                <div class="pic" id="left-pic">
                     <img src="/asset/images/esther.jpg" alt="">
                 </div>
                 <div class="bio">
@@ -423,7 +421,7 @@
     
                     
               </div> 
-                 <div class="pic">
+                 <div class="pic" id="right-pic">
                     <img src="/asset/images/temple.jpg" alt="">
                 </div>
             </div>
@@ -434,7 +432,7 @@
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
-                <div class="pic">
+                <div class="pic" id="left-pic">
                     <img src="/asset/images/dennis.jpg" alt="">
                 </div>
                 <div class="bio">

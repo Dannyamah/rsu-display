@@ -15,3 +15,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+var menuIcon = document.getElementById("menu-icon")
+var dropdown = document.getElementById("dropdown")
+var open = false;
+menuIcon.addEventListener("click", function(){
+    if(open == false){
+        dropdown.style.display = "block"
+        open = true
+    }else{
+        dropdown.style.display = "none"
+        open = false
+    }
+})

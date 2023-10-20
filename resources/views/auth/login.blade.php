@@ -62,7 +62,7 @@
     <title>Login</title>
     <meta name="description" content="Some description for the page"/>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/d_assets/images/favicon.png">
+    <link rel="shortcut icon" href="/asset/images/favicon.ico" type="image/x-icon">
     <link href="/d_assets/css/style.css" rel="stylesheet">
     
 </head>
@@ -77,7 +77,7 @@
               <div class="col-xl-12">
                   <div class="auth-form">
                       <div class="text-center mb-3">
-                        <a href="{{ route('welcome') }}"><img  src="/asset/images/logo.png" style="width: 300px" alt=""></a>
+                        <a href="{{ route('welcome') }}"><img  src="/d_assets/images/logo1.jpg" style="width: 200px"  alt=""></a>
                       </div>
                       <h4 class="text-center mb-4">Sign in your account</h4>
                       <form action="{{ route('login') }}" method="POST"> @csrf

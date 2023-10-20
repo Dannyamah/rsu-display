@@ -1,35 +1,3 @@
-{{-- <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>{{ config('app.name', 'Laravel') }}</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
-            </div>
-
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
-            </div>
-        </div>
-    </body>
-</html> --}}
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHY-DISPLAY</title>
     
+    <link rel="shortcut icon" href="/asset/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="asset/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="asset/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/570f3f9e71.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="asset/css/home.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -50,8 +20,9 @@
 <body>
     <!-- NAV-BAR SECTION BEGINS-->
     <div class="nav_bar">
-        <img src="asset/images/logo.png" alt="">
-        <ul>
+        <img src="asset/images/logo1.jpg"  alt="">
+        <svg id="menu-icon" style="width:25px; fill:rgb(18, 44, 130)"class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv menu-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="MenuIcon" style="color: rgb(18, 44, 130); font-size: 25px;"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        <ul id="dropdown" >
             <li><a href="#home">Home</a></li>
             <li><a href="#our_work">Our Work</a></li>
             <li><a href="{{ route('dashboard') }}">Displayed</a></li>
@@ -70,7 +41,7 @@
     <!-- ABOUT-US SECTION ENDS -->
 
     <!-- FOOTER SECTION BEGINS -->
-   <div class="footer" data-aos="fade-up" data-aos-offset="-150"
+   <div class="footer" data-aos="fade-up" data-aos-offset="-350"
             data-aos-delay="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -80,12 +51,11 @@
         <div class="foot_up">
             <div class="foot_cont">
                 <div class="cont_img">
-                    <img src="asset/images/rsudisplay.png" alt="">
+                    <img src="asset/images/logo1.jpg" alt="">
                 </div>
                 <p>
-                    PHYDISPLAY is device designed and constructed for
-                    the Physics/electronics option in the department of Physics,
-                    Rivers State University to communicate relevant information
+                    PHY-ELECT-RSU is device designed and constructed for the Physics/electronics option
+                     in the department of Physics, Rivers State University to communicate relevant information 
                     to all students of Physics department and others.
                 </p>
             </div>
@@ -102,7 +72,7 @@
             </div>
             <div class="foot_cont">
                 <h4>Explore More</h4>
-                <ul>
+                <ul id="last_foot_cont">
                     <li>
                         <a href="https://www.researchgate.net/profile/Nicholas-Tasie">
                             Dr. Nicholas N.  Tasie
@@ -124,17 +94,17 @@
                             Esther Tochi Ogbegbe
                         </a>
                     </li>
-                    {{-- <li>Nyenke Anthony Udokanma</li>
-                    <li>Emmanuel Dennis</li> --}}
+                    
                 </ul>
             </div>
         </div>
         <div class="foot_down">
+                <div class="cont">
+                    <p style="margin-left: 10px">Supported By</p>
+                    <a href="https://www.linkedin.com/in/engr-e-f-idema-735a18230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="asset/images/riipson.jpeg" alt=""></a>
+                </div>
             <div class="cont">
-                <a href="https://www.rsu.edu.ng/"><img src="asset/images/rsuwhite.png" alt=""></a>
-            </div>
-            <div class="cont">
-                <p>© PHY-DISPLAY 2023. All right reserved.</p>
+                <p>© PHY-ELECT-RSU 2023. All rights reserved.</p>
             </div>
         </div>
     </div> 

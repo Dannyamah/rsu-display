@@ -88,4 +88,12 @@ class HomeController extends Controller
         return redirect()->route('dashboard');
 
     }
+
+    function message_destroy($id)
+    {
+        $display = Display::findOrFail($id);
+        $display->delete();
+
+        return redirect()->route('dashboard')->with('success', 'Transaction deleted successfully.');
+    }
 }

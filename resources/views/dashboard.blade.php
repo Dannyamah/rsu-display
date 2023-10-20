@@ -50,9 +50,9 @@
                                                     <a href="{{ route('message.edit', $display) }}" class="btn btn-primary btn-sm">Edit</a>
                                                     
                                                     <!-- Delete button -->
-                                                    <form action="" method="POST" style="display: inline;">
+                                                    <form action="{{ route('message.destroy', $display) }}" method="POST" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this message?')">
                                                         @csrf
-                                                        {{-- @method('DELETE') --}}
+                                                        @method('DELETE')
                                                         <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                                     </form>
                                                 </div>

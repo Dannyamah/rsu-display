@@ -46,7 +46,7 @@
 <title>Dashboard</title>	
 <meta name="description" content="Some description for the page"/>
     <!-- Favicon icon -->	
-<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/asset/images/favicon.ico" type="image/x-icon">
 <link href="/d_assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
 <link href="/d_assets/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet" type="text/css"/>
 <link href="/d_assets/vendor/chartist/css/chartist.min.css" rel="stylesheet" type="text/css"/>
@@ -54,7 +54,32 @@
 <link href="/d_assets/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="/d_assets/css/style.css" rel="stylesheet" type="text/css"/>
-				
+			
+<style>
+    .power-button {
+        width: 60px;
+        height: 50px;
+        background-color: red;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-left: 20px;
+    }
+
+    .power-button.on {
+        background-color: green;
+    }
+
+    .power-button-text {
+        margin-right: 10px;
+    }
+</style>
+
 
 
 </head>
@@ -85,9 +110,9 @@
         ***********************************-->
         <div class="nav-header">
             <a href="{{ route('welcome') }}" class="brand-logo">
-							<img class="logo-abbr" src="/asset/images/logo.png" alt="">
-						                <img class="logo-compact" src="/asset/images/logo.png" alt="">
-                <img class="brand-title" src="/asset/images/logo.png" alt="">
+							<img class="logo-abbr" src="/asset/images/logo1.jpg" alt="">
+						                <img class="logo-compact" src="/asset/images/logo1.jpg" alt="">
+                <img class="brand-title" src="/asset/images/logo1.jpg" alt="">
 				
             </a>
 
@@ -124,8 +149,18 @@
 									<div class="header-info">
 										<span class="text-black">{{ Auth::user()->name }}</span>
 									</div>
-                                    <img  src="d_assets/images/profile/17.jpg" width="20" alt=""/>
+                                    <img  src="/d_assets/images/profile/17.jpg" width="20" alt=""/>
                                 </a>
+                                @if (Auth::user()->role == 'admin')
+                                <div class="power-button-container">
+                                    {{-- <label for="powerButton" class="power-button-label">Turn Off Device</label> --}}
+                                    <div class="power-button text-center" id="powerButton">
+                                        <span class="power-button-text">OFF</span>
+                                        <div class="power-button-switch"></div>
+                                    </div>
+                                </div>
+                                @endif
+                    
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a href="{{ route('logout') }}" class="dropdown-item ai-icon">
                                         <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
@@ -165,6 +200,13 @@
                         <span class="nav-text">Add Static Message</span>
                     </a>
                 </li>
+                {{-- <div class="power-button-container">
+                    <label for="powerButton" class="power-button-label">Turn Off Device</label>
+                    <div class="power-button" id="powerButton">
+                        <span class="power-button-text">OFF</span>
+                        <div class="power-button-switch"></div>
+                    </div>
+                </div> --}}
             </ul>
             
             
@@ -253,6 +295,16 @@
 		});
 	</script>
 		
+        <script>
+            const powerButton = document.getElementById("powerButton");
+            let isOn = false;
+        
+            powerButton.addEventListener("click", () => {
+                isOn = !isOn;
+                powerButton.classList.toggle("on", isOn);
+                powerButton.querySelector(".power-button-text").textContent = isOn ? "ON" : "OFF";
+            });
+        </script>
 	
 </body>
 
