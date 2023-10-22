@@ -227,14 +227,14 @@
                 <h2>About Us</h2>
             </div>
     
-            <div class="contain" data-aos="fade-up" data-aos-offset="-150"
+            <div class="contain" id="left-cont" data-aos="fade-up" data-aos-offset="-150"
             data-aos-delay="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
-                <div class="pic" id="left-pic">
+                <div class="pic">
                     <img src="/asset/images/drnick.jpg" alt="">
                 </div>
                 <div class="bio">
@@ -254,11 +254,12 @@
                             <h4>Explore More</h4>
                         </a>
                     </div>
+                    
     
                 </div>
     
             </div>
-            <div class="contain" data-aos="fade-up" data-aos-offset="-150"
+            <div class="contain" id="right-cont" data-aos="fade-up" data-aos-offset="-150"
             data-aos-delay="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -292,7 +293,7 @@
                     <img src="/asset/images/sodiq.jpg" alt="">
                 </div>
             </div>
-            <div class="contain" data-aos="fade-up" data-aos-offset="-150"
+            <div class="contain" id="left-cont" data-aos="fade-up" data-aos-offset="-150"
             data-aos-delay="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -304,8 +305,7 @@
                 </div>
                 <div class="bio">
                     <p>
-                        Amah Daniel, is a physics/electronics graduate hailing from the beautiful state of akwa Ibom,
-                        Nigeria. I thrive on tackling intricate problems head-on and embracing challenges as
+                        Amah Daniel, is a physics/solid-state BSC degree holder. I thrive on tackling intricate problems head-on and embracing challenges as
                         opportunities
                         for growth. With a knack for staying composed under pressure, I'm your go-to person for
                         ingenious
@@ -327,7 +327,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contain" data-aos="fade-up" data-aos-offset="-150"
+            <div class="contain" id="right-cont" data-aos="fade-up" data-aos-offset="-150"
                     data-aos-delay="0"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
@@ -367,7 +367,7 @@
                     <img src="/asset/images/wisdom.jpg" alt="">
                 </div>
             </div>
-            <div class="contain" data-aos="fade-up" data-aos-offset="-150"
+            <div class="contain" id="left-cont" data-aos="fade-up" data-aos-offset="-150"
             data-aos-delay="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -400,7 +400,7 @@
     
                 </div>
             </div>
-            <div class="contain" data-aos="fade-up" data-aos-offset="-150"
+            <div class="contain" id="right-cont" data-aos="fade-up" data-aos-offset="-150"
             data-aos-delay="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -425,7 +425,7 @@
                     <img src="/asset/images/temple.jpg" alt="">
                 </div>
             </div>
-            <div class="contain" data-aos="fade-up" data-aos-offset="-150"
+            <div class="contain" id="left-cont" data-aos="fade-up" data-aos-offset="-150"
             data-aos-delay="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"

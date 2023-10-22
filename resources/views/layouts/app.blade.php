@@ -110,9 +110,9 @@
         ***********************************-->
         <div class="nav-header">
             <a href="{{ route('welcome') }}" class="brand-logo">
-							<img class="logo-abbr" src="/asset/images/logo1.jpg" alt="">
-						                <img class="logo-compact" src="/asset/images/logo1.jpg" alt="">
-                <img class="brand-title" src="/asset/images/logo1.jpg" alt="">
+							<img class="logo-abbr" src="/asset/images/logo2.jpg" style="max-width: 80px; height: auto" alt="">
+						                <img class="logo-compact" src="/asset/images/logo2.jpg" style="max-width: 80px; alt="">
+                <img class="brand-title" src="/asset/images/logo2.jpg" style="max-width: 80px;">
 				
             </a>
 

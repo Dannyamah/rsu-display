@@ -28,3 +28,20 @@ menuIcon.addEventListener("click", function(){
         open = false
     }
 })
+
+// let scrollPosition = 0;
+
+// function scrollImages() {
+//     const imageContainers = document.querySelectorAll('.image-container');
+
+//     imageContainers.forEach((container, index) => {
+//         const offset = (window.innerHeight - container.offsetHeight) * index;
+//         container.style.transform = `translateY(${scrollPosition + offset}px)`;
+//     });
+
+//     scrollPosition += 2; // Adjust the scroll speed as needed
+
+//     requestAnimationFrame(scrollImages);
+// }
+
+// scrollImages();

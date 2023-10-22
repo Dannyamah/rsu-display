@@ -41,7 +41,7 @@
                                         <li>
                                             <div class="timeline-badge primary"></div>
                                             <a class="timeline-panel text-muted" href="#">
-                                                <span>10 minutes ago</span>
+                                                <span>{{ $display->created_at }}</span>
                                                 <h6 class="mb-0">{{$display->message}}</h6>
 
                                                 @if (Auth::user()->role == 'admin')

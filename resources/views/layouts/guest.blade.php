@@ -19,10 +19,10 @@
 
 <body>
     <!-- NAV-BAR SECTION BEGINS-->
-    <div class="nav_bar">
-        <img src="asset/images/logo1.jpg"  alt="">
+    <div class="nav_bar" style="background-color: aliceblue">
+        <img src="asset/images/logo2.jpg"  alt="">
         <svg id="menu-icon" style="width:25px; fill:rgb(18, 44, 130)"class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv menu-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="MenuIcon" style="color: rgb(18, 44, 130); font-size: 25px;"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
-        <ul id="dropdown" >
+        <ul id="dropdown">
             <li><a href="#home">Home</a></li>
             <li><a href="#our_work">Our Work</a></li>
             <li><a href="{{ route('dashboard') }}">Displayed</a></li>
@@ -51,10 +51,10 @@
         <div class="foot_up">
             <div class="foot_cont">
                 <div class="cont_img">
-                    <img src="asset/images/logo1.jpg" alt="">
+                    <img src="asset/images/logo2.jpg" alt="">
                 </div>
                 <p>
-                    PHY-ELECT-RSU is device designed and constructed for the Physics/electronics option
+                    PHY-ELECT-RSU is a device designed and constructed for the Physics/electronics option
                      in the department of Physics, Rivers State University to communicate relevant information 
                     to all students of Physics department and others.
                 </p>
@@ -99,13 +99,13 @@
             </div>
         </div>
         <div class="foot_down">
-                <div class="cont">
+                <div class="cont" id="foot_rip">
                     <p style="margin-left: 10px">Supported By</p>
                     <a href="https://www.linkedin.com/in/engr-e-f-idema-735a18230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="asset/images/riipson.jpeg" alt=""></a>
                 </div>
-            <div class="cont">
-                <p>© PHY-ELECT-RSU 2023. All rights reserved.</p>
-            </div>
+                <div class="cont">
+                    <p>© PHY-ELECT-RSU 2023. All rights reserved.</p>
+                </div>
         </div>
     </div> 
 

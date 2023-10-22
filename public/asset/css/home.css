@@ -23,8 +23,8 @@
 
 
 .nav_bar img {
-    width: 120px;
-    margin: 17px 0px 7px 100px;
+    width: 200px;
+    margin: 35px 0px 7px 15px;
 }
 
 .nav_bar ul {
@@ -124,6 +124,7 @@
     padding-top: 10px;
     justify-content: center;
     text-align: center;
+    /* font-size: 12px; */
 }
 
 
@@ -238,7 +239,7 @@
     background-color: #012945;
     color: white;
     margin-left: 200px;
-
+    font-size: 13px;
 }
 
 .about_us .contain .but a {
@@ -280,10 +281,10 @@
 }
 
 .footer .foot_up .foot_cont .cont_img img {
-    width: 50%;
-    height: 25px;
-    margin-top: 20px;
-
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .footer .foot_up .foot_cont p {
@@ -301,7 +302,7 @@
     width: 100%;
     text-align: center;
     color: #dc4e0c;
-    font-weight: normal;
+    font-weight: bolder;
     font-size: 18px;
 }
 
@@ -337,17 +338,21 @@
 }
 
 .footer .foot_down .cont img {
-    width: 60%;
-    height: 40px;
+    width: 100px;
+    height: auto;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 7px;
 
+}
+
+#foot_rip{
+    display: flex;
 }
 
 .footer .foot_down .cont p {
     color: white;
     margin-top: 17px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* 
@@ -372,6 +377,7 @@
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         top: 0px; 
+        height: 80px;
         /* overflow-y: hidden; */
 
     }
@@ -379,7 +385,7 @@
     .nav_bar ul{
         top: -50px;
         left: 50px;
-        width: 90%;
+        width: 100%;
         z-index: 1000;
         background: #012945;
         padding-bottom: 20px;
@@ -404,14 +410,14 @@
     .nav_bar .menu-icon {
         float: right;
         position: relative;
-        top: 40px;
+        top: 30px;
         right: 40px;
         display: block;
     }
 
     .nav_bar img {
-        width: 130px;
-        margin: 5px 0px 7px 30px;
+        width: 150px;
+        margin: 25px 0px 7px 30px;
     }
 
     /* HERO SECTION */
@@ -427,7 +433,7 @@
     .hero .display {
         width: 99%;
         height: 150px;
-        position: relative;
+        position: fixed;
         top: 80px;
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         margin-left: 10px;
@@ -600,10 +606,10 @@
     }
     
     .footer .foot_up .foot_cont .cont_img img {
-        width: 70px;
-        height: 50px;
-        margin-top: 2px;
-        margin-left: 45px;
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 3px;
     }
     
     .footer .foot_up .foot_cont p {
@@ -744,12 +750,13 @@
 .nav_bar ul li a:hover {
     color: #005224;
     border-radius: 5px;
-
-
-
 }
 
+
+
 /* nav bar section end */
+
+
 
 
 }
@@ -780,7 +787,7 @@
     }
 
     .nav_bar ul{
-        top: -50px;
+        top: -20px;
         /* margin-left: 5px; */
         width: 100%;
         background: #012945;
@@ -813,15 +820,15 @@
     }
 
     .nav_bar img {
-        width: 100px;
-        margin: 15px 0px 7px 30px;
+        width: 150px;
+        margin: 40px 0px 7px 30px;
     }
 
     /* HERO SECTION */
 
     .hero {
         width: 100%;
-        height: 450px;
+        height: 400px;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/group.jpg);
         background-size: contain;
         background-repeat: no-repeat;
@@ -1004,10 +1011,10 @@
     }
     
     .footer .foot_up .foot_cont .cont_img img {
-        width: 70px;
-        height: 50px;
-        margin-top: 2px;
-        margin-left: 45px;
+        width: 90px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 5px;
     }
     
     .footer .foot_up .foot_cont p {
@@ -1120,7 +1127,7 @@
     }
 
     .nav_bar ul{
-        top: -50px;
+        top: -20px;
         /* margin-left: 5px; */
         width: 100%;
         background: #012945;
@@ -1153,25 +1160,24 @@
     }
 
     .nav_bar img {
-        width: 100px;
-        margin: 15px 0px 7px 30px;
+        width: 140px;
+        margin: 40px 0px 2px 30px;
     }
 
     /* HERO SECTION */
 
     .hero {
         width: 100%;
-        height: 450px;
+        height: 380px;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/group.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        
     }
     
     .hero .display {
-        width: 99%;
+        width: 95%;
         height: 150px;
-        position: relative;
+        position: fixed;
         top: 80px;
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         margin-left: 10px;
@@ -1235,16 +1241,39 @@
         width: 100%;
         height: auto;
         position: relative;
-        display: block;
+        display: flex;
         justify-content: center;
         margin-bottom: 20px;
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    #left-cont{
+        display: block;
+    }
+
+    #right-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #right-cont .bio{
+        margin-left: -60px;
+    }
+
+    #right-cont #right-pic{
+        order: 1;
+    }
+
+    #right-cont .bio{
+        order: 2;
+    }
     
     .about_us .pic {
         width: 90%;
-        height: 200px;
+        height: 400px;
         margin: 20px;
         border-radius: 15px;
         display: flex;
@@ -1255,8 +1284,7 @@
     .about_us .pic img {
         width: 80%;
         height: auto;
-        border-radius: 15px;
-    
+        border-radius: 15px;    
     }
     
     .about_us .bio {
@@ -1298,12 +1326,12 @@
         width: 90px;
         text-align: center;
         font-family: sans-serif;
-        margin-top: 25px;
+        margin-top: 12px;
         padding: 10px;
         border-radius: 30px;
         background-color: #012945;
         color: white;
-        margin-left: 120px;
+        margin-left: 160px;
         font-size: 12px;
     }
     
@@ -1321,7 +1349,7 @@
     
     .footer .foot_up {
         width: 100%;
-        height: 230px;
+        height: 280px;
         display: flex;
         justify-content: center;
         padding-top: 5px;
@@ -1347,10 +1375,10 @@
     }
     
     .footer .foot_up .foot_cont .cont_img img {
-        width: 70px;
-        height: 50px;
-        margin-top: 2px;
-        margin-left: 45px;
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
     
     .footer .foot_up .foot_cont p {
@@ -1360,8 +1388,8 @@
         padding: 0px 20px 20px 20px;
         top: -10px;
         line-height: 13px;
-        text-align: justify;
-        font-size: 12px;
+        /* text-align: justify; */
+        font-size: 11px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     }
@@ -1424,11 +1452,12 @@
         color: white;
         margin-top: 17px;
         text-align: center;
+        font-size: 12px;
     }
     
     #last_foot_cont{
         margin-left: -15px;
-        line-height: 15px;
+        line-height: 12px;
     }
 
     #foot_img{
@@ -1440,4 +1469,259 @@
     .foot_down .cont{
         display: flex;
     }
+}
+
+@media only screen and (max-width: 573px) {
+
+     /* HERO SECTION */
+
+     .hero {
+        width: 100%;
+        height: 320px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/group.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .hero .display {
+        width: 95%;
+        height: 100px;
+        position: fixed;
+        top: 80px;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        margin-left: 10px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    /* .our_work .work h2 {
+        font-size: 20px !important;
+    } */
+    
+    .static{
+        width: 100%;
+        height: 30px;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    .hero .display .displayed {
+        width: 100%;
+        height: 100px;
+        color: white;
+        z-index: 800;
+    }
+    
+    .hero .display .displayed marquee {
+        margin-top: 40px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 390px) {
+     /* HERO SECTION */
+
+     .hero {
+        width: 100%;
+        height: 240px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/group.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .hero .display {
+        width: 95%;
+        height: 100px;
+        position: fixed;
+        top: 50px;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        margin-left: 10px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    /* .our_work .work h2 {
+        font-size: 12px;
+    } */
+    
+    .static{
+        width: 100%;
+        height: 30px;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        margin-top: -30px;
+    }
+    
+    .hero .display .displayed {
+        width: 100%;
+        height: 100px;
+        color: white;
+        z-index: 800;
+    }
+    
+    .hero .display .displayed marquee {
+        margin-top: 40px;
+    }
+
+    /* ABOUT US SECTION */
+
+    .about_us {
+        width: 100%;
+        height: auto;
+    }
+    
+    .about_us .cont {
+        width: 99%;
+        height: 50px;
+        color: #012945;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+    
+    .about_us .contain {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #left-cont{
+        display: block;
+    }
+
+    #right-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #right-cont .bio{
+        margin-left: -60px;
+    }
+
+    #right-cont #right-pic{
+        order: 1;
+    }
+
+    #right-cont .bio{
+        order: 2;
+    }
+    
+    .about_us .pic {
+        width: 90%;
+        height: 300px;
+        margin: 20px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .about_us .pic img {
+        width: 80%;
+        height: auto;
+        border-radius: 15px;    
+    }
+    
+    .about_us .bio {
+        width: 80%;
+        height: auto;
+        background-color: aliceblue;
+        border-radius: 15px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+        padding: 20px;
+        position: relative;
+        left: 30px;
+        }
+    
+    .about_us .bio p {
+        margin: 25px;
+        font-size: 12px;
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: normal;
+        line-height: 20px;
+    }
+    
+    .about_us .bio p a {
+        text-decoration: none;
+        color: #012945;
+    }
+    
+    .about_us .contain .but {
+        position: absolute;
+        width: 50%;
+        border-radius: 0px 0px 15px 15px;
+        top: 85%;
+        left: 10px;
+    }
+    
+    .about_us .contain .but h4 {
+    
+        width: 90px;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 35px;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: #012945;
+        color: white;
+        margin-left: 100px;
+        font-size: 12px;
+    }
+    
+    .about_us .contain .but a {
+        text-decoration: none;
+    }
+
+    .footer .foot_up .foot_cont .cont_img img {
+        width: 80px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .footer .foot_down .cont img {
+        width: 60px;
+        height: auto;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+     /* NEW EDIT */
+
+    .footer .foot_up .foot_cont ul {
+        margin-left: -15px;
+        color: white;
+        font-size: 12px;
+        line-height: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    } 
+
+   
+    #last_foot_cont {
+        margin-left: -40px;
+        font-size: 10px;
+    }
+
+    #left-cont{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-left: -10px;
+    }
+
 }
