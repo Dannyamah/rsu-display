@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Display;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
@@ -11,7 +12,9 @@ class HomeController extends Controller
     function dashboard(){
 
         $displays = Display::latest()->get();
-        return view('dashboard', compact('displays'));
+        $statics = Display::select('static_message')->get();
+
+        return view('dashboard', compact('displays', 'statics'));
 
     }
 
@@ -95,5 +98,27 @@ class HomeController extends Controller
         $display->delete();
 
         return redirect()->route('dashboard')->with('success', 'Transaction deleted successfully.');
+    }
+
+    function get_status() {
+        
+            // Retrieve the current status from the database
+            $status = DB::table('displays')->orderBy('created_at', 'desc')->limit(1)->value('status');
+
+            return response()->json(['status' => $status]);
+
+    }
+
+    function update_status(Request $request){
+        
+         // Get the status (1 for "on" and 0 for "off") from the request
+         $status = $request->input('status');
+
+         // Update the status in the database
+         DB::table('displays')->orderBy('created_at', 'desc')->limit(1)->update(['status' => $status]);
+ 
+         // You can return a response to indicate the status update success if needed
+         return response()->json(['message' => 'Status updated successfully']);
+
     }
 }

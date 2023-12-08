@@ -32,7 +32,7 @@
                 <div class="col-xl-12 col-xxl-12 col-lg-12">
                     <div class="card">
                         <div class="card-header border-0 pb-0">
-                            <h4 class="card-title">All Messages</h4>
+                            <h4 class="card-title">Scrolling Messages</h4>
                         </div>
                         <div class="card-body">
                             <div id="DZ_W_TimeLine" class="widget-timeline dz-scroll height370">
@@ -49,7 +49,7 @@
                                                     <!-- Edit button -->
                                                     <a href="{{ route('message.edit', $display) }}" class="btn btn-primary btn-sm">Edit</a>
                                                     
-                                                    <!-- Delete button -->
+                                                    <!-- Deleoffte button -->
                                                     <form action="{{ route('message.destroy', $display) }}" method="POST" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this message?')">
                                                         @csrf
                                                         @method('DELETE')
@@ -65,6 +65,29 @@
                                         </li>
                                         @endforeach
 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-xxl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header border-0 pb-0">
+                            <h4 class="card-title">Static Messages</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="DZ_W_TimeLine" class="widget-timeline dz-scroll height370">
+                                <ul class="timeline">
+                                    @foreach ($statics as $static)
+                                        
+                                    @endforeach
+                                    <li>
+                                        <div class="timeline-badge primary"></div>
+                                        <a class="timeline-panel text-muted" href="#">
+                                            <span>{{ $static->created_at }}</span>
+                                            <h6 class="mb-0">{{ $static->created_at }}</strong>.</h6>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

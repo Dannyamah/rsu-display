@@ -35,6 +35,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/add-static-message', [HomeController::class, 'add_static_message'])->name('static.add');
     Route::post('/submit-static-message', [HomeController::class, 'submit_static_message'])->name('static.submit');
+    
 
     Route::get('/edit-message/{display}', [HomeController::class, 'edit_scrolling_message'])->name('message.edit');
     Route::post('/update-message/{display}', [HomeController::class, 'update_scrolling_message'])->name('message.update');
@@ -46,4 +47,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::post('/update-status', [HomeController::class, 'update_status'])->name('update.status');
+    Route::get('/get-status', [HomeController::class, 'get_status'])->name('get.status');
 require __DIR__.'/auth.php';

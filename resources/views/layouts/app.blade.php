@@ -151,15 +151,14 @@
 									</div>
                                     <img  src="/d_assets/images/profile/17.jpg" width="20" alt=""/>
                                 </a>
-                                @if (Auth::user()->role == 'admin')
+                                {{-- @if (Auth::user()->role == 'admin')
                                 <div class="power-button-container">
-                                    {{-- <label for="powerButton" class="power-button-label">Turn Off Device</label> --}}
                                     <div class="power-button text-center" id="powerButton">
                                         <span class="power-button-text">OFF</span>
                                         <div class="power-button-switch"></div>
                                     </div>
                                 </div>
-                                @endif
+                                @endif --}}
                     
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a href="{{ route('logout') }}" class="dropdown-item ai-icon">
@@ -298,13 +297,60 @@
         <script>
             const powerButton = document.getElementById("powerButton");
             let isOn = false;
+
+               // Fetch the initial status from the server
+    fetch('/get-status') // Create a Laravel route to retrieve the current status
+        .then(response => response.json())
+        .then(data => {
+            isOn = data.status === 1;
+            updateButtonState();
+            console.log(data)
+        })
+        .catch(error => {
+            console.error('Failed to retrieve status:', error);
+        });
         
             powerButton.addEventListener("click", () => {
                 isOn = !isOn;
                 powerButton.classList.toggle("on", isOn);
                 powerButton.querySelector(".power-button-text").textContent = isOn ? "ON" : "OFF";
+        
+                // Call the updateDatabaseStatus function to send the AJAX request
+                updateDatabaseStatus(isOn);
             });
+
+            function updateButtonState() {
+            powerButton.classList.toggle("on", isOn);
+            powerButton.querySelector(".power-button-text").textContent = isOn ? "ON" : "OFF";
+    }
+            function updateDatabaseStatus(isOn) {
+                const status = isOn ? 1 : 0;
+        
+                // Send an AJAX request to the Laravel route
+                fetch('/update-status', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}', // Add the CSRF token
+                    },
+                    body: JSON.stringify({ status: status }),
+                })
+                .then(response => {
+                if (response.ok) {
+                    return response.json(); // Successful response
+                } else {
+                    throw new Error('Request failed with status: ' + response.status);
+                }
+                    })
+                    .then(data => {
+                        console.log(data.message);
+                    })
+                    .catch(error => {
+                        console.error('Request failed:', error);
+                    });
+                        }
         </script>
+        
 	
 </body>
 
